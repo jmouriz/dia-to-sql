@@ -1,8 +1,8 @@
 # dia-to-sql
 
-dia-to-sql es un pequeño código escrito en Perl que convierte un diagrama de dabe de datos (ER) de [Dia](https://live.gnome.org/Dia) a SQL. Está basado en el módulo de Perl [Parse::DIA::SQL](http://annocpan.org/dist/Parse-Dia-SQL) pero no lo usa. A diferencia de éste, dia-to-sql agrega la característica de reconocer las líneas de relación entre tablas calculando por aproximaxión a que columnas se refieren. No encontré hasta hoy alguna herramienta que lo haga ya que las relaciones de los diagramas de base de datos de Dia no incluyen datos acerca de las columnas que relacionan sino que conectan las tablas por puntos de conexión preestablecidos en el borde la de caja que contiene la tabla. dia-to-sql intenta calcular geométricamente por aproximación a que columna se refiere la relación según el punto de unión al que se conecta.
+dia-to-sql es un pequeño código escrito en Perl que convierte un diagrama de dabe de datos (ER) de [Dia](https://live.gnome.org/Dia) a SQL. Está basado en el módulo de Perl [Parse::DIA::SQL](http://annocpan.org/dist/Parse-Dia-SQL) pero no lo usa. A diferencia de éste, **dia-to-sql agrega la característica de reconocer relaciones entre tablas** calculando por aproximaxión a que columnas se refieren las líneas que las conectan. No encontré hasta hoy alguna herramienta que lo haga ya que las relaciones de los diagramas de base de datos de Dia no incluyen datos acerca de las columnas que relacionan sino que conectan las tablas por puntos de conexión preestablecidos en el borde la de caja que contiene la tabla. dia-to-sql intenta calcular geométricamente por aproximación a que columna se refiere la relación según el punto de unión al que se conecta.
 
-dia-to-sql intenta convertir esto:
+dia-to-sql convierte esto:
 
 ![screenshot](https://jmouriz.github.io/resources/images/screenshots/dia-to-sql-1.png) 
 
@@ -131,4 +131,4 @@ create table help (
 );
 ```
 
-Bienvenidos a probarlo, espero les sea de utilidad
+Escribiendo código por tí. Bienvenido a probarlo y espero te sea de utilidad
