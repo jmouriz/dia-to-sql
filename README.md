@@ -8,6 +8,6 @@ dia-to-sql intenta convertir esto:
 
 en esto:
 
-![screenshot](https://jmouriz.github.io/resources/images/screenshots/dia-to-sql-1.png) 
+![screenshot](https://jmouriz.github.io/resources/images/screenshots/dia-to-sql-2.png) 
 
 Espero te sea de utilidad
